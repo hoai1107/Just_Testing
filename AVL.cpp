@@ -213,14 +213,3 @@ void AVL::updateHeight(node*& n){
     n->height = 1 + max(leftHeight, rightHeight);
     n->balance_factor = rightHeight - leftHeight;
 }
-
-int main(){
-    AVL aTree;
-    for(int i=1;i<=10;++i){
-        aTree.insert(i);
-    }
-
-    aTree.display();
-
-    return 0;
-}
